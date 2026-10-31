@@ -16,6 +16,7 @@ To ensure zero ambiguity, complete coverage, and institutional-grade rigor acros
 
 ```
 docs/
+├── senior_engineering_review.md   # Pre-build senior engineering review & evaluation (v2)
 ├── 01_clinical_domain/            # Clinical pathophysiology, trial data, & guidelines
 ├── 02_venture_strategy/           # Market math ($100M ARR), YC premortem, & venture reviews
 ├── 03_technical_architecture/     # Multi-agent systems, Strands Decider, MCP, & open-source stacks
@@ -23,6 +24,12 @@ docs/
 ├── 05_cloud_and_infrastructure/   # Verified AWS sandbox endpoints, models, & latency benchmarks
 └── README.md                      # This master navigation index
 ```
+
+---
+
+## 🔍 Pre-Build Review & Architectural Audit
+
+* 📄 [**Senior Engineering Review (v2)**](./senior_engineering_review.md): Comprehensive pre-build audit using 7 skills (`find-skills`, `ponytail`, `healthcare-cdss-patterns`, `strands`, `fhir-developer-skill`, `healthcare-phi-compliance`, `mckinsey-rewired-2nd`) and verified APIs in `strands-agents==1.63.0`. Defines the P0 clinical invariant fixes, the proportionate 2-agent Strands Graph architecture, the 9-scenario evaluation matrix, and the phased implementation plan.
 
 ---
 
