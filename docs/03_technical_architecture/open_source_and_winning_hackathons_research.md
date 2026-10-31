@@ -1,6 +1,6 @@
 # Deep Research: Open-Source Assets, Winning Hackathon Repositories & Execution Resources
 
-**Author Context:** Senior AI Product Leadership (Google Health / AWS AgentCore / McKinsey QuantumBlack / Palantir) & Board-Certified Physician (MD)  
+**Analytical Framing:** Written from the dual perspectives of Enterprise AI Systems Architecture (AWS / Healthcare Agent Frameworks) and Clinical Cardiology Practice Guidelines (ACC/AHA / HFSA)  
 **Hackathon Target:** AWS Builder Center — *Strands SDK: Workshop to Ship*  
 **Analytical Scope:** Top-Winning Agent Repositories, Open-Source Toolkits, Proven "Secret Sauce" Winning Patterns, and Production Hackathon Stacks
 

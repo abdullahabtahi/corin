@@ -1,6 +1,6 @@
 # Comprehensive Deep Research: Healthcare Problem Spaces for Multi-Agent Systems
 
-**Author Context:** Senior AI Product Leadership (Google Health / AWS AgentCore / McKinsey QuantumBlack / Palantir) & Board-Certified Clinical Physician (MD)  
+**Analytical Framing:** Written from the dual perspectives of Enterprise AI Systems Architecture (AWS / Healthcare Agent Frameworks) and Clinical Cardiology Practice Guidelines (ACC/AHA / HFSA)  
 **Hackathon Context:** AWS Builder Center — *Strands SDK: Workshop to Ship* (AI Agents for Social Good)  
 **Analytical Scope:** Problem Space Diagnosis, Structural Asymmetries, Clinical Failure Modes, and Empirical Trial Evidence (*Strictly Problem Discovery — Zero Solution Bias*)
 

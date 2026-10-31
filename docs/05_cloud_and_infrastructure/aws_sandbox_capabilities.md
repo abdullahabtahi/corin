@@ -1,8 +1,8 @@
 # AWS Sandbox Environment Capabilities & Inventory
 
 **Last Verified:** October 31, 2026  
-**Account ID:** `741448938361`  
-**Role ARN:** `arn:aws:sts::741448938361:assumed-role/WSParticipantRole/Participant`  
+**Account ID:** `[REDACTED_WORKSHOP_ACCOUNT]`  
+**Role ARN:** `[REDACTED_PARTICIPANT_ROLE]`  
 **Default Region:** `us-east-1`  
 **Environment Type:** AWS Workshop Studio / Event Engine (Ephemeral Session)  
 
