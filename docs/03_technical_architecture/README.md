@@ -13,6 +13,12 @@ This directory contains technical research, agent frameworks, open-source toolki
    * Deterministic CDSS Safety Guardian & Cryptographic Action Intent Token.
    * Production AWS Cloud Mapping (IoT Core, S3, HealthLake, Athena, Flink, DynamoDB).
 
+0.1 [**AWS Strands Agent Harness Maximization Specification**](./strands_harness_maximization_spec.md)
+   * Comprehensive guide to leveraging the full AWS Strands Agent Harness SDK (`strands-agents==1.63.0`).
+   * Mapping to the 7 modules of `aws-samples/sample-strands-agents-hands-on-workshop`.
+   * Native Strands `InterventionHandler` (`Proceed`, `Deny`, `BeforeToolCallEvent`) for deterministic CDSS safety.
+   * OpenTelemetry lifecycle hooks, `FileSessionManager` conversational memory, and multi-model Bedrock mesh.
+
 1. [**Data Engineering & Clinical Feature Pipeline Specification**](./data_engineering_and_pipeline_spec.md)
    * Enterprise data architecture, signal processing, and data contracts.
    * Pandera DataFrameModels and the Outlier Quarantine Dead-Letter Queue (DLQ).
