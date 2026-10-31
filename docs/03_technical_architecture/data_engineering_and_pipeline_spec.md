@@ -1,7 +1,7 @@
 # Data Engineering & Clinical Feature Pipeline Specification
 
 **Enterprise Data Architecture, Signal Processing, and Data Contracts**  
-**Project:** AegisHealth AI — Autonomous Cardiorenal Decompensation Interceptor  
+**Project:** Corin — Autonomous Cardiorenal Decompensation Interceptor  
 **Frameworks:** Google PHA Physiological Schemas, SQL-on-FHIR v2, Pydantic Data Contracts, Medallion Architecture  
 **Date:** October 2026  
 **Document Location:** `docs/03_technical_architecture/data_engineering_and_pipeline_spec.md`  
@@ -10,7 +10,7 @@
 
 ## 1. Executive Summary: The Dual-Paradigm Data Problem
 
-Healthcare multi-agent systems fail when they treat heterogeneous medical data as raw unstructured prompts. AegisHealth bridges **two fundamentally different data paradigms**:
+Healthcare multi-agent systems fail when they treat heterogeneous medical data as raw unstructured prompts. Corin bridges **two fundamentally different data paradigms**:
 
 ```mermaid
 flowchart TD

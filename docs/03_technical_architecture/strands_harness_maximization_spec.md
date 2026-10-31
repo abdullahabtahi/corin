@@ -18,13 +18,13 @@ In naive AI projects, developers treat the LLM as a chatbot. In **top 0.01% Agen
 
 ---
 
-## 2. The 7-Pillar Strands Harness Architecture in AegisHealth
+## 2. The 7-Pillar Strands Harness Architecture in Corin
 
-Following the 7 modules of the AWS Strands Hands-On Workshop, here is how AegisHealth maximizes every layer of the Strands SDK:
+Following the 7 modules of the AWS Strands Hands-On Workshop, here is how Corin maximizes every layer of the Strands SDK:
 
 ```mermaid
 flowchart TD
-    subgraph StrandsHarness ["AWS Strands Agent Harness (AegisHealth AI)"]
+    subgraph StrandsHarness ["AWS Strands Agent Harness (Corin)"]
         direction TB
         
         subgraph Layer1 ["Pillar 1: Model Mesh (Amazon Bedrock)"]

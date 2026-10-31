@@ -1,6 +1,6 @@
 # 05. Cloud & Infrastructure
 
-This directory contains cloud environment verification, verified model endpoints, latency benchmarks, and infrastructure inventories for **AegisHealth AI**.
+This directory contains cloud environment verification, verified model endpoints, latency benchmarks, and infrastructure inventories for **Corin**.
 
 ---
 

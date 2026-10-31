@@ -1,20 +1,20 @@
-# AegisHealth AI: Comprehensive UX Architecture & Design Artifacts
+# Corin: Comprehensive UX Architecture & Design Artifacts
 
 **AI-Native Clinical Experience Specification & Wireframe Blueprint**  
-**Design System:** Aegis Clinical Design System (CDS v1.0)  
+**Design System:** Corin Clinical Design System (CDS v1.0)  
 **Target Personas:** 
 1. **Patient Arthur** (72yo Medicare CHF/CKD patient — Zero-App SMS)  
 2. **Care Manager Sarah, RN** (ACO Population Health — Triage & Worklist)  
 3. **Dr. Robert Chen, MD** (Attending Cardiologist — 45-Second 1-Click SBAR)  
 4. **AWS Hackathon Judges & Venture Partners** (Real-Time "Multi-Agent Theater")  
 **Compliance Standards:** WCAG 2.2 Level AAA, ONC HTI-1 Ergonomics, FDA Non-Device CDS Guidelines  
-**Document Location:** `docs/ux/aegishealth_ux_system_and_artifacts.md`  
+**Document Location:** `docs/ux/corin_ux_system_and_artifacts.md`  
 
 ---
 
 ## 1. Information Architecture (IA) & Multi-Actor Ecosystem
 
-AegisHealth distributes its cognitive mesh across three distinct interaction surfaces tailored to the human cognitive bandwidth of each actor:
+Corin distributes its cognitive mesh across three distinct interaction surfaces tailored to the human cognitive bandwidth of each actor:
 
 ```mermaid
 flowchart TD
@@ -23,7 +23,7 @@ flowchart TD
         Scale["Cellular IoT Scale / Cuff<br/>• Step-and-transmit (Cat-M1/NB-IoT)<br/>• No Wi-Fi or Bluetooth pairing"]
     end
 
-    subgraph AgentMesh ["2. Aegis Cognitive Swarm (Strands SDK & AWS Bedrock)"]
+    subgraph AgentMesh ["2. Corin Multi-Agent Mesh (Strands SDK & AWS Bedrock)"]
         Decider["Strands Decider 2B: 115ms System 1 Gating"]
         Swarm["DataScience + HealthCoach + ClinicalExpert Agents"]
         Safety["SafetyGuardian: Deterministic Non-LLM Hard Veto"]
@@ -60,7 +60,7 @@ AI-native healthcare software must define explicit decision boundaries between m
 
 ---
 
-## 3. Aegis Clinical Design System (CDS Tokens & Guidelines)
+## 3. Corin Clinical Design System (CDS Tokens & Guidelines)
 
 Designed according to `ui-ux-pro-max` guidelines for high-stress medical environments:
 
@@ -97,7 +97,7 @@ Designed according to `ui-ux-pro-max` guidelines for high-stress medical environ
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│  Messages       Arthur's Care Companion (Aegis)         │
+│  Messages       Arthur's Care Companion (Corin)         │
 ├──────────────────────────────────────────────────────────┤
 │                                                          │
 │  [10:02 AM]                                              │
@@ -146,7 +146,7 @@ Designed according to `ui-ux-pro-max` guidelines for high-stress medical environ
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  AegisHealth AI | Population Health Guardian                   ACO: Pine Valley Medicare REACH (3,240 Lives)    │
+│  Corin | Population Health Guardian                   ACO: Pine Valley Medicare REACH (3,240 Lives)    │
 ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  FILTERS: [All Risk Levels (250)] [Critical Alerts (3)] [Pending Physician Action (7)] [Stable (240)]          │
 ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
@@ -219,7 +219,7 @@ Designed according to `ui-ux-pro-max` guidelines for high-stress medical environ
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│  AEGISHEALTH AI — LIVE MULTI-AGENT SWARM ORCHESTRATOR                          AWS BUILDER CENTER DEMO       │
+│  CORIN — LIVE MULTI-AGENT SWARM ORCHESTRATOR                                   AWS BUILDER CENTER DEMO       │
 ├───────────────────────────────────────────────┬──────────────────────────────────────────────────────────────┤
 │  LEFT PANE: LIVE PATIENT & TELEMETRY STREAM   │  RIGHT PANE: MULTI-AGENT COGNITIVE CHAIN (STRANDS SDK)      │
 ├───────────────────────────────┬───────────────┴──────────────────────────────────────────────────────────────┤
@@ -251,7 +251,7 @@ Judges click the red **`[Inject Fatal K+ Spike]`** button. The screen flashes am
 
 ## 5. Nielsen's Usability Heuristics Compliance Audit
 
-| Nielsen Heuristic | Aegis Implementation | Clinical Impact |
+| Nielsen Heuristic | Corin Implementation | Clinical Impact |
 | :--- | :--- | :--- |
 | **1. Visibility of System Status** | Real-time state indicators on the patient card (`SMS Dispatched`, `Awaiting Labs`, `Physician Signed`). | Nurses always know whether an action was executed or pending. |
 | **2. Match between System & Real World** | Uses the standardized medical **SBAR** framework (Situation, Background, Assessment, Recommendation). | Doctors do not have to learn a new software schema; it speaks their medical dialect. |

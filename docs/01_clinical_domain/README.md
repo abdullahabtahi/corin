@@ -1,6 +1,6 @@
 # 01. Clinical Domain & Problem Space
 
-This directory contains deep clinical research, medical pathophysiology, and empirical evidence underpinning **AegisHealth AI**.
+This directory contains deep clinical research, medical pathophysiology, and empirical evidence underpinning **Corin**.
 
 ---
 

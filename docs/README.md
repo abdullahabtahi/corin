@@ -1,9 +1,12 @@
-# AegisHealth AI — Master Documentation Index
+# Corin — Master Documentation Index
 
 **Mutually Exclusive, Collectively Exhaustive (MECE) Knowledge Base**  
-**Project:** AegisHealth AI — Autonomous Cardiorenal Decompensation Interceptor  
+**Project:** Corin — Autonomous Cardiorenal Decompensation Interceptor  
 **Target Event:** AWS Builder Center Hackathon (*"Strands SDK: Workshop to Ship"*) → Y Combinator Seed  
 **Date:** October 2026  
+
+> **Clinical Etymology & Design Rationale:**  
+> **Corin** is named after the cardiac transmembrane serine protease expressed in human cardiac myocytes. When the heart experiences volume overload and myocardial wall stretch, **Corin cleaves pro-ANP into active Atrial Natriuretic Peptide (ANP)**, signaling the kidneys to excrete sodium and water (\(Na^+ / \text{H}_2\text{O}\)) to relieve intravascular pressure. Corin is the computational analog of nature's endogenous cardiorenal homeostatic loop: detecting subclinical hemodynamic drift in software before a patient experiences acute pulmonary edema.  
 
 ---
 
@@ -44,7 +47,7 @@ docs/
 *Everything pertaining to AI models, agent frameworks, MCP tools, and open-source ecosystems.*
 
 * 📁 [**`docs/03_technical_architecture/`**](./03_technical_architecture/README.md)
-  * [**Master System Architecture (Top 0.01% Institutional Blueprint)**](./03_technical_architecture/master_system_architecture.md): The unified end-to-end architecture specification for AegisHealth AI; QuantumBlack Kedro Tri-Store Pattern (DuckDB, NetworkX, Gold Contract); Multi-Model AWS Bedrock Mesh (Nova Micro, Cohere Rerank 3.5, Claude Sonnet 4.6); CDSS Deterministic Safety Guardian; Governed Write-Back Action Intent Tokens.
+  * [**Master System Architecture (Top 0.01% Institutional Blueprint)**](./03_technical_architecture/master_system_architecture.md): The unified end-to-end architecture specification for Corin; QuantumBlack Kedro Tri-Store Pattern (DuckDB, NetworkX, Gold Contract); Multi-Model AWS Bedrock Mesh (Nova Micro, Cohere Rerank 3.5, Claude Sonnet 4.6); CDSS Deterministic Safety Guardian; Governed Write-Back Action Intent Tokens.
   * [**AWS Strands Agent Harness Maximization Specification**](./03_technical_architecture/strands_harness_maximization_spec.md): Comprehensive guide to leveraging the full AWS Strands Agent Harness SDK (`strands-agents==1.63.0`); mapping to the 7 modules of `aws-samples/sample-strands-agents-hands-on-workshop`; native Strands `InterventionHandler` (`Proceed`, `Deny`, `BeforeToolCallEvent`) for deterministic CDSS safety; OpenTelemetry lifecycle hooks, `FileSessionManager` conversational memory, and multi-model Bedrock mesh.
   * [**Data Engineering & Clinical Feature Pipeline Specification**](./03_technical_architecture/data_engineering_and_pipeline_spec.md): Enterprise data architecture, signal processing, and data contracts; Pandera DataFrameModels and the Outlier Quarantine DLQ; 7-day EWMA velocity smoothing, rolling Z-score anomalies, and autonomic HR drift; Google SQL-on-FHIR v2 flattening via DuckDB.
   * [**Jev & Strands Decider: System One Decision Models**](./03_technical_architecture/strands_decider_and_jev_deep_research.md): Technical analysis of System 1 vs. System 2 agent paradigms; TypeSafe AI's Jev (`POST /v1/systemone`, RLCD); AWS Strands Decider 2B (Marc Brooker et al., 115ms local latency, JevBench #1); Strands Intervention System (`before_tool_call`, `Proceed`, `Deny`, `Confirm`, `Guide`); Tri-Tier Clinical Decision Mesh.
@@ -59,7 +62,7 @@ docs/
 *Everything pertaining to human-AI interfaces, clinical workflows, design systems, and wireframes.*
 
 * 📁 [**`docs/04_ux_and_design/`**](./04_ux_and_design/README.md)
-  * [**AegisHealth UX Architecture & Wireframe Blueprints**](./04_ux_and_design/aegishealth_ux_system_and_artifacts.md): Multi-actor information architecture (Patient SMS, Nurse Triage, Doctor 1-Click SBAR, Hackathon Multi-Agent Theater); AI-native agency-control ladder; Clinical Design System (CDS v1.0) tokens (WCAG 2.2 AAA colors, tabular numbers); ASCII layout wireframes; Nielsen's 10 Heuristics compliance audit.
+  * [**Corin UX Architecture & Wireframe Blueprints**](./04_ux_and_design/corin_ux_system_and_artifacts.md): Multi-actor information architecture (Patient SMS, Nurse Triage, Doctor 1-Click SBAR, Hackathon Multi-Agent Theater); AI-native agency-control ladder; Clinical Design System (CDS v1.0) tokens (WCAG 2.2 AAA colors, tabular numbers); ASCII layout wireframes; Nielsen's 10 Heuristics compliance audit.
 
 ---
 

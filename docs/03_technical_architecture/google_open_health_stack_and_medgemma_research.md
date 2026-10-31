@@ -36,12 +36,12 @@ flowchart TD
         TX["TxGemma (Therapeutics)<br/>• Small molecules & proteins"]
     end
 
-    subgraph AgenticIntegration ["AegisHealth AI Integration (AWS Strands Swarm)"]
-        Aegis["AegisHealth Cardiorenal Guardian"]
+    subgraph AgenticIntegration ["Corin Integration (AWS Strands Swarm)"]
+        Corin["Corin Cardiorenal Guardian"]
     end
 
-    DataInfrastructure --> Aegis
-    OpenAIModels --> Aegis
+    DataInfrastructure --> Corin
+    OpenAIModels --> Corin
 ```
 
 Together, these pillars provide:
@@ -132,7 +132,7 @@ In 2024–2025, Google Research published landmark findings in *Nature Medicine*
 
 ---
 
-## 5. Architectural Synthesis: Bridging Google's Open Stack with AWS Strands for AegisHealth AI
+## 5. Architectural Synthesis: Bridging Google's Open Stack with AWS Strands for Corin
 
 By combining **Google's Open Health Stack** and **HAI-DEF open-weights** with the **AWS Strands SDK**, we construct an elite, cross-ecosystem architecture for the hackathon and YC venture pitch:
 

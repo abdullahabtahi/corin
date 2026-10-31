@@ -235,9 +235,9 @@ agent = Agent(
 
 ---
 
-## 6. How We Apply This to AegisHealth AI (AWS Hackathon Architecture)
+## 6. How We Apply This to Corin (AWS Hackathon Architecture)
 
-Integrating **Strands Decider** into our hackathon submission elevates **AegisHealth AI** into the top echelon of architectural sophistication, directly matching the newest advancements from AWS Distinguished Engineers.
+Integrating **Strands Decider** into our hackathon submission elevates **Corin** into the top echelon of architectural sophistication, directly matching the newest advancements from AWS Distinguished Engineers.
 
 ### 6.1 The Tri-Tier Clinical Decision Mesh
 
@@ -270,7 +270,7 @@ flowchart TD
     end
 ```
 
-### 6.2 Specific Value Added by Strands Decider to AegisHealth:
+### 6.2 Specific Value Added by Strands Decider to Corin:
 1. **Zero-Latency Inflow Triage:**
    - When a patient texts *"I feel kind of dizzy and chest hurts a little,"* we do not wait 3 seconds for a generative LLM. Strands Decider evaluates `red_flag` (noul) in **115ms**. If high, it halts agent processing instantly.
 2. **Preventing Hallucinated Clinical Interventions (`before_tool_call`):**

@@ -1,13 +1,13 @@
 # 03. Technical Architecture & Agent Systems
 
-This directory contains technical research, agent frameworks, open-source toolkits, Model Context Protocol (MCP) integrations, and architecture blueprints for **AegisHealth AI**.
+This directory contains technical research, agent frameworks, open-source toolkits, Model Context Protocol (MCP) integrations, and architecture blueprints for **Corin**.
 
 ---
 
 ## Documents
 
 1. [**Master System Architecture (Top 0.01% Institutional Blueprint)**](./master_system_architecture.md)
-   * The complete end-to-end architecture specification for AegisHealth AI.
+   * The complete end-to-end architecture specification for Corin.
    * QuantumBlack Kedro Tri-Store Pattern (DuckDB, NetworkX, Gold Contract) with zero state drift.
    * Multi-Model AWS Bedrock Mesh (Nova Micro, Cohere Rerank 3.5, Claude Sonnet 4.6).
    * Deterministic CDSS Safety Guardian & Cryptographic Action Intent Token.

@@ -1,4 +1,4 @@
-# AegisHealth AI — Structured Clinical & Venture Review
+# Corin — Structured Clinical & Venture Review
 
 **Reviewer Posture:** World-Class Clinical AI & HealthTech Venture Reviewer
 **Verdict:** Exceptionally well-researched for a hackathon-stage project. The clinical thesis is sound, the architecture is defensible, and the go-to-market math is credible — but one structural risk could unravel the entire value chain.
@@ -17,7 +17,7 @@ The core clinical thesis is correct and well-supported:
 
 - **The "75% preventable" claim needs qualification.** This figure likely derives from older CMS analyses and the Jencks et al. (2009) *NEJM* paper on rehospitalizations. The more defensible framing is: *"a substantial proportion of readmissions are associated with modifiable hemodynamic and medication adherence factors."* In a YC partner meeting, an overconfident "75%" will invite scrutiny. The team should cite the specific interventions (oral diuretic titration, fluid restriction coaching) and their NNT (number needed to treat) to prevent one readmission. The OPTIMIZE-HF and EVEREST trial data give you this.
 
-**Key strength:** The project correctly identifies that the value is not in the *detection* alone (many RPM companies detect weight gain) but in the *closed-loop response* — automated symptom discovery via SMS, guideline-adherent SBAR generation, and a 1-click clinician action. This is the actual clinical gap. Most RPM systems generate alerts that drown nurses in noise. AegisHealth's architecture proposes to *triage and pre-package the clinical response*, which is where the real workflow value lives.
+**Key strength:** The project correctly identifies that the value is not in the *detection* alone (many RPM companies detect weight gain) but in the *closed-loop response* — automated symptom discovery via SMS, guideline-adherent SBAR generation, and a 1-click clinician action. This is the actual clinical gap. Most RPM systems generate alerts that drown nurses in noise. Corin's architecture proposes to *triage and pre-package the clinical response*, which is where the real workflow value lives.
 
 ---
 
@@ -33,9 +33,9 @@ The 4-agent architecture with a **non-LLM deterministic Safety Guardian Agent** 
 
 - **The deterministic veto layer is the correct pattern.** By routing all clinical recommendations through a rules-based engine (ACC/AHA guideline logic, hard-coded contraindication checks, renal function thresholds, potassium bounds) *before* any output reaches a clinician, the system creates a verifiable safety envelope. This is architecturally analogous to how aviation autopilot systems work: the AI proposes, the deterministic envelope protects, the human decides.
 
-- **This is also the FDA/regulatory moat.** If AegisHealth ever pursues FDA 510(k) or De Novo classification as a Clinical Decision Support (CDS) software, the deterministic safety layer is what makes the difference between a "locked" algorithm (Class II device) and an "adaptive" AI (much harder regulatory path). The team should be aware of the 21st Century Cures Act CDS exemption criteria — if the system meets all four criteria (displays information, intended for clinician use, allows independent review, doesn't replace clinical judgment), it may not require FDA clearance at all. The deterministic guardian is what keeps you in that safe harbor.
+- **This is also the FDA/regulatory moat.** If Corin ever pursues FDA 510(k) or De Novo classification as a Clinical Decision Support (CDS) software, the deterministic safety layer is what makes the difference between a "locked" algorithm (Class II device) and an "adaptive" AI (much harder regulatory path). The team should be aware of the 21st Century Cures Act CDS exemption criteria — if the system meets all four criteria (displays information, intended for clinician use, allows independent review, doesn't replace clinical judgment), it may not require FDA clearance at all. The deterministic guardian is what keeps you in that safe harbor.
 
-**Competitive defensibility:** Most hackathon health AI projects (and frankly, most Series A health AI startups) treat safety as a prompt engineering problem. AegisHealth treats it as an *architectural* problem. This is the correct instinct and will resonate with any CMO evaluator or clinical informaticist on a judging panel.
+**Competitive defensibility:** Most hackathon health AI projects (and frankly, most Series A health AI startups) treat safety as a prompt engineering problem. Corin treats it as an *architectural* problem. This is the correct instinct and will resonate with any CMO evaluator or clinical informaticist on a judging panel.
 
 ---
 
@@ -66,7 +66,7 @@ The research documents reveal a team that has studied what wins hackathons with 
 
 This is the structural risk that could collapse the entire value proposition, and the research documents do not adequately address it.
 
-**The issue:** AegisHealth's clinical mechanism depends on *continuous passive telemetry* — nocturnal resting HR, HRV (RMSSD), SpO2 trends, and ideally bioimpedance. This data must come from consumer wearables (Apple Watch, Fitbit/Pixel Watch, Oura, Garmin, Samsung Galaxy Watch, Withings).
+**The issue:** Corin's clinical mechanism depends on *continuous passive telemetry* — nocturnal resting HR, HRV (RMSSD), SpO2 trends, and ideally bioimpedance. This data must come from consumer wearables (Apple Watch, Fitbit/Pixel Watch, Oura, Garmin, Samsung Galaxy Watch, Withings).
 
 **The problem is threefold:**
 

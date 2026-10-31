@@ -1,12 +1,12 @@
 # 04. UX & Interaction Design
 
-This directory contains the user experience specifications, clinical design system tokens, wireframe blueprints, and heuristic audits for **AegisHealth AI**.
+This directory contains the user experience specifications, clinical design system tokens, wireframe blueprints, and heuristic audits for **Corin**.
 
 ---
 
 ## Documents
 
-1. [**AegisHealth UX Architecture & Wireframe Blueprints**](./aegishealth_ux_system_and_artifacts.md)
+1. [**Corin UX Architecture & Wireframe Blueprints**](./corin_ux_system_and_artifacts.md)
    * **Multi-Actor Information Architecture:**
      - Screen 1: Zero-App Conversational SMS Patient Dialogue (Natural Language Experience - NLX).
      - Screen 2: ACO Care Manager Population Triage & Risk Worklist.

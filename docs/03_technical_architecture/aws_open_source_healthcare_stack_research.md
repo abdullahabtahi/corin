@@ -119,7 +119,7 @@ The following open-source repositories from `aws-samples` and `awslabs` directly
   - Before any response is delivered to the physician, an agent extracts first-order Well-Formed Formulas (WFFs) representing claims made in the text (e.g. `(= heart-rate 55)`).
   - A formal **Deductive Theorem Prover (`cvc5`)** tests these WFFs against the patient's ground-truth FHIR theory.
   - If a contradiction is detected (`Invalid`), the output is rejected or repaired.
-- **Relevance to AegisHealth:** Provides empirical AWS-backed precedent for our **Safety Guardian Agent** deterministic validation architecture!
+- **Relevance to Corin:** Provides empirical AWS-backed precedent for our **Safety Guardian Agent** deterministic validation architecture!
 
 ### 3.4 `aws-samples/sample-healthcare-agents`
 - **What it does:** End-to-end Prior Authorization and Revenue Cycle Management built with the Strands SDK on Bedrock.
@@ -145,13 +145,13 @@ In addition to open-source code, AWS provides managed, HIPAA-eligible building b
 
 ---
 
-## 5. Architectural Blueprint: The Unified AWS Strands Healthcare Stack for AegisHealth AI
+## 5. Architectural Blueprint: The Unified AWS Strands Healthcare Stack for Corin
 
 By combining these open-source AWS assets, we establish a robust, hackathon-ready implementation plan:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                    AegisHealth AI — Complete AWS Stack                     │
+│                    Corin — Complete AWS Stack                     │
 └─────────────────────────────────────────────────────────────────────────────┘
 
 [1. PATIENT INTERFACE LAYER]

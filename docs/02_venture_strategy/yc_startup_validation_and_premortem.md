@@ -1,4 +1,4 @@
-# AegisHealth AI: YC Venture Capital Validation & Rigorous Premortem Analysis
+# Corin: YC Venture Capital Validation & Rigorous Premortem Analysis
 
 **Venture Evaluation & Adversarial Investment Memo**  
 **Target Event:** AWS Builder Center Hackathon (*"Strands SDK: Workshop to Ship"*) → Y Combinator (YC) Seed Acceleration  
@@ -12,7 +12,7 @@
 
 | Metric / Question | Value / Thesis |
 | :--- | :--- |
-| **Company Name** | **AegisHealth AI** (Project Working Title: AegisCardio) |
+| **Company Name** | **Corin** (Named after the cardiac enzyme that signals renal diuresis under atrial stretch) |
 | **One-Line Pitch** | Autonomous multi-agent cardiorenal guardian that eliminates preventable heart failure readmissions for Accountable Care Organizations (ACOs) via continuous passive telemetry, subclinical symptom discovery, and deterministic 1-click clinical decision support. |
 | **Category** | Value-Based Care AI / Autonomous Clinical Agent Mesh |
 | **Hair-on-Fire Problem** | Heart failure decompensation is the #1 single cause of Medicare hospitalizations (\$38B/year), yet 75% of readmissions are preventable if subclinical fluid accumulation is caught and treated with simple oral diuretic adjustments 7–10 days before pulmonary edema strikes. |
@@ -39,14 +39,14 @@ In fee-for-service (FFS) medicine, hospitals profit from filled beds (\$24,800 p
 
 $$\text{Delta} = \text{Score}_{\text{New}} - \text{Score}_{\text{Current}} \ge 4$$
 
-| Dimension | Current Legacy Solution (Portal / Manual RPM) | AegisHealth AI | Delta Score |
+| Dimension | Current Legacy Solution (Portal / Manual RPM) | Corin | Delta Score |
 | :--- | :--- | :--- | :--- |
 | **Patient Adherence** | **2/10:** Clunky Bluetooth hubs, separate proprietary apps, 16-day CPT billing cliff, confusing interfaces. 80% churn by Day 90. | **9/10:** Zero-app onboarding. Automated, conversational SMS/WhatsApp check-ins using motivational interviewing. 91% 90-day retention. | **+7** |
 | **Clinical Signal Quality** | **3/10:** Raw uncalibrated telemetry dumps (scale fluctuations, post-prandial sodium swings) causing 50+ noise alerts per nurse per day. | **9/10:** Automated data cleaning, rolling baselines (EWMA), and subclinical conversational symptom scoring (orthopnea, bendopnea). | **+6** |
 | **Clinician Workload** | **2/10:** 15 minutes per patient to review charts, check lab histories in Epic, and draft orders manually. Massive nurse burnout. | **9/10:** Pre-packaged SBAR with 1-click ACC/AHA guideline-validated order draft ready in Epic in under 45 seconds. | **+7** |
 | **Time-to-Intervention** | **3/10:** Emergency room visit when patient is already drowning in pulmonary edema (acute dyspnea). | **9/10:** Outpatient oral diuretic titration (e.g., Lasix 40mg $\rightarrow$ 80mg) executed 7–10 days before acute decompensation. | **+6** |
 
-**Conclusion:** Across every critical dimension, AegisHealth delivers a **Delta $\ge +6$**, far surpassing the venture threshold of $+4$ required for irreversible customer adoption.
+**Conclusion:** Across every critical dimension, Corin delivers a **Delta $\ge +6$**, far surpassing the venture threshold of $+4$ required for irreversible customer adoption.
 
 ### 1.3 The $100M ARR Path (Bottom-Up Unit Economics)
 
@@ -100,7 +100,7 @@ flowchart TD
         B3["Hospitals transitioning from Volume (FFS) to Value (Capitation)"]
     end
     
-    Regulatory --> Product["AegisHealth AI Platform"]
+    Regulatory --> Product["Corin Platform"]
     Technological --> Product
     Behavioral --> Product
 ```
@@ -121,34 +121,34 @@ flowchart TD
 
 ## 3. The Brutal Adversarial Pre-Mortem: Why 99% of Healthcare Startups Die Here
 
-We convened an adversarial panel representing a **Skeptical YC Partner**, a **Health System Chief Legal Officer**, and an **Epic Systems Enterprise Architect**. Below are the 5 lethal failure modes that kill healthcare AI startups, and AegisHealth's structural defense.
+We convened an adversarial panel representing a **Skeptical YC Partner**, a **Health System Chief Legal Officer**, and an **Epic Systems Enterprise Architect**. Below are the 5 lethal failure modes that kill healthcare AI startups, and Corin's structural defense.
 
 ### Failure Mode 1: The B2C Patient Churn Death Spiral ("The App Graveyard")
 * **The Vulnerability:** 95% of digital health startups build a patient mobile app (iOS/Android). The average heart failure patient is 73 years old, may have diabetic retinopathy, mild cognitive impairment, or arthritic fingers. Asking them to download an app from the App Store, pair a Bluetooth scale, remember a password, and log in daily yields an 80% churn rate within 60 days.
-* **The Aegis Solution (Zero-App Frictionless Engagement):**
+* **The Corin Solution (Zero-App Frictionless Engagement):**
   - **No app download required.** All conversational interactions occur via **Standard Two-Way SMS**, **WhatsApp**, or **Automated Interactive Voice Response (IVR)**.
   - Telemetry scales and cuffs use pre-paired cellular chips (Cat-M1/NB-IoT), transmitting weight automatically the moment the patient steps on the scale—no Wi-Fi setup, no Bluetooth pairing.
   - Micro-interactions: Instead of a 20-question survey, the agent sends 1 conversational check-in at 10:00 AM: *"Good morning, Arthur. We noticed your weight was up 2 lbs from Tuesday. Did you need an extra pillow to sleep comfortably last night?"* Adherence jumps from 22% to **89%**.
 
 ### Failure Mode 2: The 18-Month Hospital IT & Epic Committee Trap
 * **The Vulnerability:** Selling software to enterprise health systems (e.g., Mayo Clinic, Kaiser, HCA) requires navigating 14 committee approvals (Cybersecurity, Privacy, IRB, Pharmacy & Therapeutics, EHR Integration, Value Analysis). Sales cycles average 14–22 months. A seed-funded startup runs out of cash and dies before the first contract is signed.
-* **The Aegis Solution (The Risk-Bearing Wedge):**
+* **The Corin Solution (The Risk-Bearing Wedge):**
   - **Do NOT sell to Fee-for-Service Hospital IT.** Sell directly to **Independent Physician Associations (IPAs), ACO REACH entities, and Medicare Advantage Payviders** (e.g., Oak Street Health, ChenMed, Agilon Health, Privia).
   - These organizations bear downside financial risk today, make decentralized software purchasing decisions, and operate with 60–90 day sales cycles.
-  - **Technical Architecture:** Deploy via **SMART on FHIR standalone apps** or webhook-driven clinical inbox integrations. Aegis can operate completely out-of-band via secure clinician web dashboard while drafting FHIR `CommunicationRequest` or `Task` resources directly into the provider's EHR inbox.
+  - **Technical Architecture:** Deploy via **SMART on FHIR standalone apps** or webhook-driven clinical inbox integrations. Corin can operate completely out-of-band via secure clinician web dashboard while drafting FHIR `CommunicationRequest` or `Task` resources directly into the provider's EHR inbox.
 
 ### Failure Mode 3: The Medicolegal Liability & "Duty to Monitor" Trap
 * **The Vulnerability:** If a digital health startup advertises *"24/7 continuous AI patient monitoring,"* it creates an implied legal standard of care. If a patient experiences ventricular fibrillation or sudden cardiogenic shock at 2:15 AM on Sunday, and the startup's system sends an alert that sits unread in an inbox until Monday morning, plaintiff malpractice attorneys will sue both the clinic and the startup for wrongful death under failure-to-warn theories.
-* **The Aegis Solution (Non-Emergency Asynchronous CDSS):**
-  - **Clear Regulatory Boundary:** AegisHealth is legally and architecturally classified as an **Asynchronous Clinical Decision Support (CDS) System**, strictly governed under **Section 520(o)(1)(E) of the 21st Century Cures Act** and FDA CDS Guidance.
+* **The Corin Solution (Non-Emergency Asynchronous CDSS):**
+  - **Clear Regulatory Boundary:** Corin is legally and architecturally classified as an **Asynchronous Clinical Decision Support (CDS) System**, strictly governed under **Section 520(o)(1)(E) of the 21st Century Cures Act** and FDA CDS Guidance.
   - **Explicit Non-Emergency Invariants:**
-    1. During patient onboarding, the patient signs an explicit acknowledgement that Aegis is an outpatient trend analyzer, **NOT an emergency response system**.
+    1. During patient onboarding, the patient signs an explicit acknowledgement that Corin is an outpatient trend analyzer, **NOT an emergency response system**.
     2. Real-time deterministic safety override: If patient inputs contain red-flag keywords (*"crushing chest pain", "can't breathe", "fainting"*), the conversation is instantly terminated by the Safety Guardian Agent, and an un-bypassable screen/SMS directs the patient: *"Call 911 immediately or proceed to the nearest Emergency Department."*
-    3. Aegis monitors **chronic subclinical volume trends over 7–14 day windows**, explicitly focusing on elective oral diuretic adjustments, not acute hemodynamic collapse.
+    3. Corin monitors **chronic subclinical volume trends over 7–14 day windows**, explicitly focusing on elective oral diuretic adjustments, not acute hemodynamic collapse.
 
 ### Failure Mode 4: The LLM Hallucination & Dosage Lethality Trap
 * **The Vulnerability:** LLMs are probabilistic language predictors. In healthcare, a prompt like *"Adjust the patient's Lasix"* might hallucinate a dangerous dose (e.g., *"Take 160mg of Lasix twice daily"*) or recommend a potassium-sparing diuretic (Spironolactone) to a patient whose latest lab indicates hyperkalemia ($K^+ = 5.6\text{ mEq/L}$), triggering fatal cardiac arrest.
-* **The Aegis Solution (Deterministic Non-LLM Safety Gates):**
+* **The Corin Solution (Deterministic Non-LLM Safety Gates):**
   - **The Golden Architecture Rule:** *No LLM is ever permitted to generate, finalize, or transmit a pharmaceutical prescription.*
   - The Clinical Expert Agent drafts recommendations using guideline templates, but the recommendation is passed through the **Safety Guardian Agent**—a pure-code, deterministic Python rule engine:
     ```python
@@ -172,20 +172,20 @@ We convened an adversarial panel representing a **Skeptical YC Partner**, a **He
 
 ### Failure Mode 5: The "Epic / Microsoft DAX Will Build It" Commoditization Trap
 * **The Vulnerability:** Why can't Epic or Microsoft Nuance add this feature to MyChart next quarter?
-* **The Aegis Solution (Structural Defensibility & Data Network Moat):**
+* **The Corin Solution (Structural Defensibility & Data Network Moat):**
   - **Epic's Business Model is Documentation, Not Out-of-Hospital Workflow:** Epic is an enterprise transactional database optimized for billing and fee-for-service compliance. Epic's engineering culture is reactive (recording what happened in the clinic), not proactive (engaging an octogenarian over SMS to prevent next week's hospitalization).
   - **The Multi-Agent Context Moat:** Epic cannot run continuous autonomous agents with external API execution, multi-device cellular ingestion, and longitudinal motivational interviewing.
-  - **Proprietary Clinical Ground-Truth Flywheel:** Every time a physician accepts, edits, or rejects an Aegis SBAR recommendation, Aegis captures the feedback loop paired with 30-day readmission outcomes. This creates a proprietary dataset of cardiorenal trajectory models that no foundation model provider possesses.
+  - **Proprietary Clinical Ground-Truth Flywheel:** Every time a physician accepts, edits, or rejects an Corin SBAR recommendation, Corin captures the feedback loop paired with 30-day readmission outcomes. This creates a proprietary dataset of cardiorenal trajectory models that no foundation model provider possesses.
 
 ---
 
 ## 4. Blue Ocean Strategy: ERRC Grid & Strategy Canvas
 
-AegisHealth does not compete head-to-head with EHRs or traditional RPM hardware vendors. It creates uncontested market space by redefining the category from **"Passive Vital Recording"** to **"Autonomous Pre-Decompensation Interception."**
+Corin does not compete head-to-head with EHRs or traditional RPM hardware vendors. It creates uncontested market space by redefining the category from **"Passive Vital Recording"** to **"Autonomous Pre-Decompensation Interception."**
 
 ```
 High ^
-     |                                                    * AegisHealth AI
+     |                                                    * Corin
      |                                                  /   (Autonomous Interception)
      |        * Legacy RPM (Teladoc/Livongo)           /
      |       / \                                      /
@@ -258,16 +258,16 @@ For the **AWS Builder Center Hackathon** judges and early investors, the live de
 
 ```
 [00:00 - 00:15] The Hook & The Bleeding Cost
-"Every year, 1 million heart failure patients are rushed to the ER because their lungs fill with fluid. It costs Medicare $38 Billion. In value-based care, ACOs lose millions on these readmissions. Meet AegisHealth."
+"Every year, 1 million heart failure patients are rushed to the ER because their lungs fill with fluid. It costs Medicare $38 Billion. In value-based care, ACOs lose millions on these readmissions. Meet Corin."
 
 [00:15 - 00:30] The Invisible Decompensation (Data Science + Health Coach Agents)
-"Here is Patient Arthur, 72, with CHF. Over 4 days, his cellular scale records a subtle 3.2 lb weight increase. Legacy systems ignore it or throw a spam alert. But Arthur's Aegis Health Coach notices and sends an SMS: 'Arthur, did you need an extra pillow to sleep flat last night?' Arthur replies: 'Yes, felt suffocated when lying down.' That is Orthopnea—the cardinal sign of pulmonary congestion."
+"Here is Patient Arthur, 72, with CHF. Over 4 days, his cellular scale records a subtle 3.2 lb weight increase. Legacy systems ignore it or throw a spam alert. But Arthur's Corin Health Coach notices and sends an SMS: 'Arthur, did you need an extra pillow to sleep flat last night?' Arthur replies: 'Yes, felt suffocated when lying down.' That is Orthopnea—the cardinal sign of pulmonary congestion."
 
 [00:30 - 00:45] The Multi-Agent Reasoning & Deterministic Guardrail (Clinical Expert + Safety Guardian)
 "Watch the Strands Agent Swarm in real time. The Clinical Expert consults ACC/AHA guidelines and drafts a temporary Lasix dose increase. But before it touches the chart, our Safety Guardian Agent intercepts it, checks Arthur's latest lab values—Potassium is 4.8, eGFR is stable, Blood Pressure is 128/82. Verdict: SAFE."
 
 [00:45 - 01:00] The 1-Click Resolution & The $25,000 Saved
-"Dr. Chen receives this exact SBAR on his mobile portal. In 15 seconds, he reviews the trajectory, clicks 'Approve Order,' and Arthur's pharmacy is notified automatically. Arthur recovers in his living room. The ER visit was prevented. The ACO just saved $24,800. That is AegisHealth AI."
+"Dr. Chen receives this exact SBAR on his mobile portal. In 15 seconds, he reviews the trajectory, clicks 'Approve Order,' and Arthur's pharmacy is notified automatically. Arthur recovers in his living room. The ER visit was prevented. The ACO just saved $24,800. That is Corin."
 ```
 
 ---
