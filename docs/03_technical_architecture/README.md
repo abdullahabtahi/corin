@@ -6,7 +6,20 @@ This directory contains technical research, agent frameworks, open-source toolki
 
 ## Documents
 
-1. [**Jev & Strands Decider: System One Decision Models**](./strands_decider_and_jev_deep_research.md)
+0. [**Master System Architecture (Top 0.01% Institutional Blueprint)**](./master_system_architecture.md)
+   * The complete end-to-end architecture specification for AegisHealth AI.
+   * QuantumBlack Kedro Tri-Store Pattern (DuckDB, NetworkX, Gold Contract) with zero state drift.
+   * Multi-Model AWS Bedrock Mesh (Nova Micro, Cohere Rerank 3.5, Claude Sonnet 4.6).
+   * Deterministic CDSS Safety Guardian & Cryptographic Action Intent Token.
+   * Production AWS Cloud Mapping (IoT Core, S3, HealthLake, Athena, Flink, DynamoDB).
+
+1. [**Data Engineering & Clinical Feature Pipeline Specification**](./data_engineering_and_pipeline_spec.md)
+   * Enterprise data architecture, signal processing, and data contracts.
+   * Pandera DataFrameModels and the Outlier Quarantine Dead-Letter Queue (DLQ).
+   * 7-day EWMA velocity smoothing, rolling Z-score anomalies, and autonomic HR drift.
+   * Google SQL-on-FHIR v2 flattening via DuckDB.
+
+2. [**Jev & Strands Decider: System One Decision Models**](./strands_decider_and_jev_deep_research.md)
    * The System 1 vs. System 2 paradigm shift in AI agent architecture.
    * TypeSafe AI's Jev (`POST /v1/systemone`, RLCD calibration, three primitives: `choice`, `score`, `noul`).
    * AWS Strands Decider 2B (Marc Brooker et al. at Strands Labs; Qwen3.5/Gemma 4 torso + 1M parameter pointer head, 115ms local latency, #1 on JevBench).
