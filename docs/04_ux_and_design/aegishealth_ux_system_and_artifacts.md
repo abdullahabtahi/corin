@@ -266,24 +266,37 @@ Judges click the red **`[Inject Fatal K+ Spike]`** button. The screen flashes am
 
 ---
 
-## 6. Implementation Roadmap: Streamlit Live Interactive Prototype
+## 6. Implementation Architecture: Reactive Single-File Tailwind SPA + FastAPI
 
-To prepare for the AWS Hackathon demo, the UI will be implemented as an interactive **Streamlit application (`app.py`)** with custom CSS styling adhering to the tokens defined in Section 3:
+To ensure zero build-step fragility, sub-millisecond local updates, and seamless Server-Sent Events (SSE) streaming from the Strands agent harness, the frontend is implemented as a **Single-File Reactive HTML5/Tailwind SPA (`static/index.html`)** served directly by **FastAPI (`src/main.py`)**:
 
-```python
-# Streamlit Component Wireframe Mapping
-import streamlit as st
+```html
+<!-- High-Performance 3-Pane Split Screen Layout for Hackathon "Multi-Agent Theater" -->
+<div class="grid grid-cols-12 gap-4 h-screen p-4 bg-slate-950 text-slate-100 font-sans">
+  
+  <!-- Left Pane (Cols 1-4): Patient Arthur iPhone SMS Simulator -->
+  <aside class="col-span-4 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col overflow-hidden">
+    <div class="p-3 border-b border-slate-800 bg-slate-900/80 flex items-center justify-between">
+      <span class="font-semibold text-sm">📱 Arthur Pendelton (SMS)</span>
+      <!-- 1-Click Fast-Forward Demo Chips -->
+      <button class="px-2 py-1 text-xs bg-indigo-600/30 text-indigo-300 rounded border border-indigo-500/40">1-Click Day 14</button>
+    </div>
+    <div id="sms-thread" class="flex-1 p-4 overflow-y-auto space-y-3">
+      <!-- Live streaming SMS dialogue via Nova Micro -->
+    </div>
+  </aside>
 
-st.set_page_config(page_title="AegisHealth AI", layout="wide")
+  <!-- Center Pane (Cols 5-8): Strands Multi-Agent Theater & Live DAG -->
+  <main class="col-span-4 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col p-4">
+    <h3 class="font-semibold text-sm mb-3">⚡ Strands Multi-Agent Harness & Timeline</h3>
+    <!-- Visual execution DAG: System 1 Decider (<5ms) -> Nova Micro -> CDSS Guardian -> Claude Sonnet 4.6 -->
+  </main>
 
-# Split-Screen Layout for Hackathon "Multi-Agent Theater"
-col_left, col_right = st.columns([1, 1])
+  <!-- Right Pane (Cols 9-12): 1-Click SBAR Action Card & Telemetry -->
+  <section class="col-span-4 bg-slate-900 border border-slate-800 rounded-2xl flex flex-col p-4">
+    <h3 class="font-semibold text-sm mb-3">📋 Clinician 45-Second SBAR Action Card</h3>
+    <!-- Chart.js 14-day telemetry curves, CDSS Pass/Veto Badge, 1-Click Approve Token -->
+  </section>
 
-with col_left:
-    st.subheader("📱 Patient Arthur — Cellular Telemetry & SMS")
-    # Displays interactive SMS conversation and weight trajectory sparkline
-
-with col_right:
-    st.subheader("⚡ Strands Multi-Agent Swarm & Safety Guardian")
-    # Displays real-time Agent reasoning steps, Strands Decider scores, and the 1-Click SBAR Card
+</div>
 ```
