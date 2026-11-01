@@ -20,3 +20,4 @@ Concise description of the observed or potential algorithmic failure, safety inv
 ## 🛡️ Recommended Safety Boundary Clamp
 What mathematical or deterministic invariant should be implemented to prevent this risk?
 *(e.g., Clamp loop diuretic titration to fail-closed when SBP < 95 mmHg)*
+

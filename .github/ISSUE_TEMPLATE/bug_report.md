@@ -26,3 +26,4 @@ A clear and concise description of what you expected to happen.
 
 ## 📋 Additional Context & Console Logs
 Add any other context, screenshots, or terminal logs here.
+

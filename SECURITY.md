@@ -47,3 +47,4 @@ Instead, please report the vulnerability privately:
 ## ⚕️ Clinical Safety Disclosures
 
 If you identify a scenario where algorithmic guidance could lead to incorrect medication titration, overlooked hyperkalemia, or compromised patient safety, treat this with the same urgency as a critical security vulnerability and follow the private reporting process outlined above.
+

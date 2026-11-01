@@ -103,3 +103,4 @@ Corin is a clinical decision support system. Any pull request that affects clini
 - **NEVER commit secrets, API keys, or credentials**. Our `.gitignore` enforces strict filters, but always verify with `git status` before committing.
 - Do NOT commit real patient health information (PHI). Use synthetic datasets conforming to Synthea or de-identified benchmarks only.
 - For vulnerability reports, see [SECURITY.md](./SECURITY.md).
+
