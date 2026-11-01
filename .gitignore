@@ -1,9 +1,58 @@
-# Environment and Secrets
+# ==============================================================================
+# Environment, Secrets, and Credentials
+# ==============================================================================
 .env
 .env.*
+!.env.example
 *.env
+*.env.local
+*.env.*.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
 
+# Cloud Provider & Service Credentials
+.aws/
+credentials
+credentials.json
+credentials.ini
+credentials.yaml
+credentials.yml
+secrets.json
+secrets.yaml
+secrets.yml
+auth.json
+token.json
+tokens.json
+*.token
+*.token.json
+.vault_token
+aws_credentials
+service_account*.json
+service-account*.json
+gcp-key*.json
+client_secret*.json
+
+# Private Keys & Certificates
+*.pem
+*.key
+*.pkcs12
+*.pfx
+*.p12
+*.crt
+*.cert
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Auth configuration files
+.netrc
+.pypirc
+
+# ==============================================================================
 # Python
+# ==============================================================================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -12,14 +61,14 @@ __pycache__/
 env/
 venv/
 .venv/
-build/
+/build/
 develop-eggs/
-dist/
+/dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -35,10 +84,33 @@ wheels/
 .coverage
 htmlcov/
 
+# ==============================================================================
+# Node / Frontend / Bun
+# ==============================================================================
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.bun/
+.vite/
+
+# ==============================================================================
+# IDEs & System
+# ==============================================================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
 # Claude & Antigravity
 .claude/
 *.log
-
-# OS
-.DS_Store
-Thumbs.db

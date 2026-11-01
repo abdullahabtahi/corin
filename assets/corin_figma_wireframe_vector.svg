@@ -1,0 +1,304 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+      text { font-family: 'Inter', -apple-system, sans-serif; }
+      .tabular { font-variant-numeric: tabular-nums; }
+    </style>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.04"/>
+    </filter>
+    <filter id="glowPulse" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <linearGradient id="gradOptimal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="gradSuboptimal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#FB923C"/>
+    </linearGradient>
+    <linearGradient id="gradCritical" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F87171"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1. PORCELAIN CANVAS BACKGROUND -->
+  <rect width="1440" height="900" fill="#F3F5F9"/>
+
+  <!-- 2. TOP GLOBAL CLINICAL NAVIGATION -->
+  <rect x="0" y="0" width="1440" height="72" fill="#FFFFFF" opacity="0.95"/>
+  <line x1="0" y1="72" x2="1440" y2="72" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Brand Identity -->
+  <circle cx="44" cy="36" r="16" fill="#2563EB" fill-opacity="0.1"/>
+  <path d="M44 26C39.58 26 36 29.58 36 34C36 40 44 46 44 46C44 46 52 40 52 34C52 29.58 48.42 26 44 26Z" fill="#2563EB"/>
+  <text x="72" y="41" font-size="16" font-weight="700" fill="#0F172A" letter-spacing="-0.02em">CORIN HEALTH</text>
+  <text x="196" y="41" font-size="14" font-weight="400" fill="#94A3B8">|</text>
+  <text x="212" y="41" font-size="14" font-weight="500" fill="#475569">Cardiorenal Ambulatory Review</text>
+
+  <!-- Segmented Navigation Control (Pills) -->
+  <rect x="520" y="16" width="380" height="40" rx="20" fill="#F1F5F9"/>
+  <!-- Active Tab: Dashboard -->
+  <rect x="524" y="20" width="100" height="32" rx="16" fill="#1E293B"/>
+  <text x="574" y="41" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Dashboard</text>
+  <text x="680" y="41" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Telemetry</text>
+  <text x="770" y="41" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Care Plans</text>
+  <text x="860" y="41" font-size="13" font-weight="500" fill="#64748B" text-anchor="middle">Audit Trace</text>
+
+  <!-- Right Clinician Header -->
+  <rect x="1160" y="18" width="256" height="36" rx="18" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <circle cx="1180" cy="36" r="10" fill="#E2E8F0"/>
+  <text x="1180" y="40" font-size="11" font-weight="700" fill="#475569" text-anchor="middle">SJ</text>
+  <text x="1198" y="40" font-size="12" font-weight="600" fill="#0F172A">Sarah Jenkins, RN</text>
+  <text x="1318" y="40" font-size="11" font-weight="500" fill="#64748B">(Pine Valley)</text>
+  <circle cx="1400" cy="36" r="4" fill="#10B981"/>
+
+  <!-- 3. LEFT ORGAN SYSTEM DOCK (64px) -->
+  <rect x="0" y="72" width="72" height="828" fill="#FFFFFF" border-right="1"/>
+  <line x1="72" y1="72" x2="72" y2="900" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Active System Button: Cardiovascular (Heart) -->
+  <rect x="12" y="92" width="48" height="48" rx="14" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <path d="M36 108C33 105 28 107 28 111C28 116 36 122 36 122C36 122 44 116 44 111C44 107 39 105 36 108Z" fill="#2563EB"/>
+  <circle cx="52" cy="98" r="3.5" fill="#EF4444"/>
+
+  <!-- Kidney Button -->
+  <rect x="12" y="152" width="48" height="48" rx="14" fill="#FFFFFF"/>
+  <path d="M31 168C33 166 38 168 39 171C40 174 38 179 34 180C31 181 29 178 29 175C29 171 30 169 31 168Z" stroke="#64748B" stroke-width="2" fill="none"/>
+  <path d="M41 168C39 166 34 168 33 171C32 174 34 179 38 180C41 181 43 178 43 175C43 171 42 169 41 168Z" stroke="#64748B" stroke-width="2" fill="none"/>
+
+  <!-- Lungs Button -->
+  <rect x="12" y="212" width="48" height="48" rx="14" fill="#FFFFFF"/>
+  <circle cx="36" cy="236" r="6" stroke="#64748B" stroke-width="2" fill="none"/>
+
+  <!-- Fluid Mass Scale Button -->
+  <rect x="12" y="272" width="48" height="48" rx="14" fill="#FFFFFF"/>
+  <rect x="28" y="294" width="16" height="3" rx="1.5" fill="#64748B"/>
+  <path d="M36 286V294" stroke="#64748B" stroke-width="2"/>
+
+  <!-- CDSS Shield Button -->
+  <rect x="12" y="332" width="48" height="48" rx="14" fill="#FFFFFF"/>
+  <path d="M36 348L43 352V357C43 362 36 366 36 366C36 366 29 362 29 357V352L36 348Z" stroke="#10B981" stroke-width="2" fill="none"/>
+
+  <!-- Multi-Agent Engine Button -->
+  <rect x="12" y="392" width="48" height="48" rx="14" fill="#FFFFFF"/>
+  <circle cx="36" cy="416" r="8" stroke="#94A3B8" stroke-width="2" fill="none" stroke-dasharray="3 3"/>
+
+  <!-- 4. CENTER STAGE: 3D CARDIORENAL TWIN (48% Width) -->
+  <!-- Patient Identification Bar -->
+  <g transform="translate(96, 92)">
+    <rect width="420" height="52" rx="16" fill="#FFFFFF" filter="url(#cardShadow)" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="20" y="32" font-size="16" font-weight="700" fill="#0F172A">Arthur Pendelton</text>
+    <rect x="164" y="18" width="38" height="20" rx="10" fill="#F1F5F9"/>
+    <text x="183" y="32" font-size="11" font-weight="600" fill="#475569" text-anchor="middle" class="tabular">71M</text>
+    <text x="212" y="32" font-size="12" font-weight="500" fill="#64748B">• HFrEF (EF 32%) • CKD 3a</text>
+  </g>
+
+  <!-- 3D Anatomical Twin Frame Placeholder Container -->
+  <rect x="96" y="156" width="580" height="560" rx="24" fill="#FFFFFF" filter="url(#cardShadow)" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Anatomical Torso Silhouette Vectors -->
+  <path d="M386 210C350 210 330 240 330 290C330 350 350 420 350 490C350 560 330 630 310 700H462C442 630 422 560 422 490C422 420 442 350 442 290C442 240 422 210 386 210Z" fill="#F1F5F9" opacity="0.6"/>
+  <!-- Head Silhouette -->
+  <ellipse cx="386" cy="180" rx="28" ry="36" fill="#F1F5F9" opacity="0.6"/>
+
+  <!-- Hotspot 1: Heart (Myocardium & Pulmonary Artery) -->
+  <circle cx="376" cy="340" r="24" fill="#F59E0B" fill-opacity="0.2" filter="url(#glowPulse)"/>
+  <circle cx="376" cy="340" r="12" fill="#F59E0B" fill-opacity="0.4"/>
+  <circle cx="376" cy="340" r="6" fill="#D97706"/>
+  <!-- Callout: Heart Elevation -->
+  <line x1="376" y1="340" x2="240" y2="310" stroke="#D97706" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <rect x="130" y="294" width="130" height="32" rx="16" fill="#1E293B" filter="url(#cardShadow)"/>
+  <circle cx="146" cy="310" r="4" fill="#F59E0B"/>
+  <text x="158" y="315" font-size="11" font-weight="600" fill="#FFFFFF">PCWP ~22 mmHg</text>
+
+  <!-- Hotspot 2: Lungs (Orthopnea / Pulmonary Congestion) -->
+  <circle cx="406" cy="310" r="18" fill="#F59E0B" fill-opacity="0.15"/>
+  <circle cx="406" cy="310" r="5" fill="#EA580C"/>
+  <line x1="406" y1="310" x2="520" y2="280" stroke="#EA580C" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <rect x="500" y="264" width="150" height="32" rx="16" fill="#1E293B" filter="url(#cardShadow)"/>
+  <circle cx="516" cy="280" r="4" fill="#EA580C"/>
+  <text x="528" y="285" font-size="11" font-weight="600" fill="#FFFFFF">Orthopnea: 2 Pillows</text>
+
+  <!-- Hotspot 3: Kidneys (Renal Perfusion & Safe Margin) -->
+  <circle cx="366" cy="440" r="16" fill="#10B981" fill-opacity="0.2"/>
+  <circle cx="366" cy="440" r="5" fill="#10B981"/>
+  <circle cx="406" cy="440" r="16" fill="#10B981" fill-opacity="0.2"/>
+  <circle cx="406" cy="440" r="5" fill="#10B981"/>
+  <line x1="406" y1="440" x2="530" y2="450" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <rect x="510" y="434" width="140" height="32" rx="16" fill="#1E293B" filter="url(#cardShadow)"/>
+  <circle cx="526" cy="450" r="4" fill="#10B981"/>
+  <text x="538" y="455" font-size="11" font-weight="600" fill="#FFFFFF">eGFR 54 • K+ Safe</text>
+
+  <!-- Floating Dark Navy Insight Card (Bottom-Left of Canvas) -->
+  <g transform="translate(116, 610)">
+    <rect width="320" height="86" rx="18" fill="#1E293B" opacity="0.95" filter="url(#cardShadow)"/>
+    <circle cx="24" cy="26" r="6" fill="#38BDF8"/>
+    <text x="38" y="30" font-size="13" font-weight="600" fill="#FFFFFF">2 Critical Patient Insights</text>
+    <text x="24" y="54" font-size="11" font-weight="400" fill="#94A3B8">• Orthopnea reported via SMS (08:14 EDT)</text>
+    <text x="24" y="72" font-size="11" font-weight="400" fill="#94A3B8">• Furosemide adherence verified at 07:30</text>
+    <rect x="230" y="50" width="76" height="24" rx="12" fill="#334155"/>
+    <text x="268" y="66" font-size="10" font-weight="600" fill="#38BDF8" text-anchor="middle">View SMS &gt;</text>
+  </g>
+
+  <!-- Floating 3D Canvas Controls (Bottom-Right) -->
+  <g transform="translate(620, 640)">
+    <circle cx="20" cy="20" r="16" fill="#FFFFFF" filter="url(#cardShadow)" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="20" y="25" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">+</text>
+    <circle cx="20" cy="60" r="16" fill="#FFFFFF" filter="url(#cardShadow)" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="20" y="64" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">-</text>
+  </g>
+
+  <!-- 5. RIGHT CLINICAL TELEMETRY STAGE (Cognitive Ergonomics: Clinical Meaning First) -->
+  
+  <!-- Section 1: Clinical Synthesis Status Card -->
+  <g transform="translate(700, 92)">
+    <rect width="716" height="104" rx="20" fill="#FFFFFF" filter="url(#cardShadow)" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <!-- Top Row: Meaning First -->
+    <rect x="24" y="18" width="8" height="8" rx="4" fill="#F59E0B"/>
+    <text x="40" y="26" font-size="14" font-weight="700" fill="#0F172A">Subclinical Fluid Congestion Detected</text>
+    
+    <rect x="560" y="16" width="132" height="26" rx="13" fill="#FEF3C7"/>
+    <text x="626" y="33" font-size="11" font-weight="700" fill="#D97706" text-anchor="middle">TITRATION INDICATED</text>
+
+    <!-- Qualitative Clinical Narrative -->
+    <text x="24" y="54" font-size="12" font-weight="400" fill="#475569">Arthur is accumulating extravascular fluid over a 72-hour trajectory with accompanying nocturnal</text>
+    <text x="24" y="72" font-size="12" font-weight="400" fill="#475569">orthopnea. Baseline renal perfusion and electrolytes remain stable, supporting early ambulatory diuresis.</text>
+
+    <!-- Subordinate Reference Chips -->
+    <rect x="24" y="82" width="140" height="16" rx="8" fill="#F8FAFC"/>
+    <text x="32" y="94" font-size="10" font-weight="500" fill="#64748B" class="tabular">Dry Baseline: 181.0 lbs</text>
+    <rect x="172" y="82" width="140" height="16" rx="8" fill="#F8FAFC"/>
+    <text x="180" y="94" font-size="10" font-weight="500" fill="#64748B" class="tabular">Baseline K+: 4.6 mEq/L</text>
+  </g>
+
+  <!-- Section 2: Physiological Trajectories (Meaning-First Biomarker Cards) -->
+  <g transform="translate(700, 212)">
+    <rect width="716" height="250" rx="20" fill="#FFFFFF" filter="url(#cardShadow)" stroke="#E2E8F0" stroke-width="1"/>
+    
+    <text x="24" y="32" font-size="13" font-weight="700" fill="#0F172A">Physiological Vector Analysis</text>
+    <text x="200" y="32" font-size="11" font-weight="500" fill="#94A3B8">Continuous Multi-Signal Congestion Mapping</text>
+
+    <!-- Caliper 1: Fluid Volume Velocity -->
+    <g transform="translate(24, 48)">
+      <text x="0" y="16" font-size="12" font-weight="600" fill="#0F172A">Fluid Volume Velocity</text>
+      <text x="140" y="16" font-size="11" font-weight="600" fill="#D97706">• Upward Drift (+3.6 lbs in 72h)</text>
+      <text x="540" y="16" font-size="11" font-weight="500" fill="#64748B" class="tabular">Telemetry: 184.6 lbs</text>
+      
+      <!-- Gradient Slider Track -->
+      <rect x="0" y="26" width="668" height="10" rx="5" fill="#F1F5F9"/>
+      <!-- Target Zone: 179 - 183 lbs -->
+      <rect x="160" y="26" width="180" height="10" rx="5" fill="url(#gradOptimal)" opacity="0.5"/>
+      <!-- Drift Zone -->
+      <rect x="340" y="26" width="160" height="10" rx="5" fill="url(#gradSuboptimal)" opacity="0.8"/>
+      <!-- Current Marker -->
+      <circle cx="450" cy="31" r="8" fill="#D97706" stroke="#FFFFFF" stroke-width="2"/>
+      <text x="160" y="50" font-size="10" font-weight="500" fill="#94A3B8" class="tabular">179.0</text>
+      <text x="250" y="50" font-size="10" font-weight="600" fill="#10B981" class="tabular">Dry Base: 181.0</text>
+      <text x="450" y="50" font-size="10" font-weight="700" fill="#D97706" class="tabular" text-anchor="middle">Current: 184.6</text>
+    </g>
+
+    <!-- Caliper 2: Autonomic Sympathetic Tone -->
+    <g transform="translate(24, 116)">
+      <text x="0" y="16" font-size="12" font-weight="600" fill="#0F172A">Autonomic Sympathetic Tone</text>
+      <text x="180" y="16" font-size="11" font-weight="600" fill="#D97706">• Compensatory Elevation (+14 bpm)</text>
+      <text x="540" y="16" font-size="11" font-weight="500" fill="#64748B" class="tabular">Resting HR: 82 bpm</text>
+      
+      <!-- Gradient Slider Track -->
+      <rect x="0" y="26" width="668" height="10" rx="5" fill="#F1F5F9"/>
+      <rect x="120" y="26" width="200" height="10" rx="5" fill="url(#gradOptimal)" opacity="0.5"/>
+      <rect x="320" y="26" width="180" height="10" rx="5" fill="url(#gradSuboptimal)" opacity="0.8"/>
+      <circle cx="420" cy="31" r="8" fill="#D97706" stroke="#FFFFFF" stroke-width="2"/>
+      <text x="120" y="50" font-size="10" font-weight="500" fill="#94A3B8" class="tabular">60 bpm</text>
+      <text x="210" y="50" font-size="10" font-weight="600" fill="#10B981" class="tabular">Nocturnal Base: 68</text>
+      <text x="420" y="50" font-size="10" font-weight="700" fill="#D97706" class="tabular" text-anchor="middle">Current: 82 bpm</text>
+    </g>
+
+    <!-- Caliper 3: Serum Potassium Safety Window -->
+    <g transform="translate(24, 184)">
+      <text x="0" y="16" font-size="12" font-weight="600" fill="#0F172A">Serum Potassium Safety Window</text>
+      <text x="210" y="16" font-size="11" font-weight="600" fill="#10B981">• Within Safe Titration Margin</text>
+      <text x="540" y="16" font-size="11" font-weight="500" fill="#64748B" class="tabular">K+: 4.6 mEq/L</text>
+      
+      <!-- Gradient Slider Track -->
+      <rect x="0" y="26" width="668" height="10" rx="5" fill="#F1F5F9"/>
+      <rect x="150" y="26" width="280" height="10" rx="5" fill="url(#gradOptimal)" opacity="0.8"/>
+      <rect x="430" y="26" width="120" height="10" rx="5" fill="url(#gradCritical)" opacity="0.8"/>
+      <circle cx="320" cy="31" r="8" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+      <text x="150" y="50" font-size="10" font-weight="500" fill="#94A3B8" class="tabular">3.5</text>
+      <text x="320" y="50" font-size="10" font-weight="700" fill="#10B981" class="tabular" text-anchor="middle">Safe: 4.6 mEq/L</text>
+      <text x="430" y="50" font-size="10" font-weight="700" fill="#EF4444" class="tabular">Veto Limit: 5.2</text>
+    </g>
+  </g>
+
+  <!-- Section 3: Evidence-Anchored SBAR & Governed Order Rail -->
+  <g transform="translate(700, 478)">
+    <rect width="716" height="238" rx="20" fill="#FFFFFF" filter="url(#cardShadow)" stroke="#E2E8F0" stroke-width="1"/>
+
+    <!-- SBAR Narrative Column (Left 55%) -->
+    <g transform="translate(24, 20)">
+      <text x="0" y="16" font-size="13" font-weight="700" fill="#0F172A">Abridge Linked Clinical Synthesis (SBAR)</text>
+      
+      <text x="0" y="42" font-size="11" font-weight="700" fill="#2563EB">[S] SITUATION</text>
+      <text x="80" y="42" font-size="11" font-weight="400" fill="#334155">Subclinical congestion with 2-pillow orthopnea and weight velocity.</text>
+
+      <text x="0" y="68" font-size="11" font-weight="700" fill="#2563EB">[B] BACKGROUND</text>
+      <text x="80" y="68" font-size="11" font-weight="400" fill="#334155">Baseline dry weight 181.0 lbs; K+ 4.6 mEq/L, eGFR 54 (CKD 3a).</text>
+
+      <text x="0" y="94" font-size="11" font-weight="700" fill="#2563EB">[A] ASSESSMENT</text>
+      <text x="80" y="94" font-size="11" font-weight="400" fill="#334155">87% risk of acute decompensation within 10–14 days without prompt titration.</text>
+
+      <text x="0" y="120" font-size="11" font-weight="700" fill="#2563EB">[R] RECOMMENDATION</text>
+      <text x="80" y="120" font-size="11" font-weight="600" fill="#0F172A">Double Furosemide to 80mg PO x 3 days; repeat BMP on Day 3.</text>
+
+      <!-- Clickable Provenance Citations -->
+      <g transform="translate(0, 148)">
+        <rect x="0" y="0" width="120" height="22" rx="11" fill="#E0F2FE"/>
+        <text x="60" y="15" font-size="10" font-weight="600" fill="#0284C7" text-anchor="middle">[1] Cellular Scale</text>
+
+        <rect x="128" y="0" width="120" height="22" rx="11" fill="#E0F2FE"/>
+        <text x="188" y="15" font-size="10" font-weight="600" fill="#0284C7" text-anchor="middle">[2] Nocturnal PPG</text>
+
+        <rect x="256" y="0" width="110" height="22" rx="11" fill="#E0F2FE"/>
+        <text x="311" y="15" font-size="10" font-weight="600" fill="#0284C7" text-anchor="middle">[3] Arthur SMS</text>
+      </g>
+    </g>
+
+    <!-- Vertical Divider -->
+    <line x1="410" y1="16" x2="410" y2="222" stroke="#E2E8F0" stroke-width="1"/>
+
+    <!-- CDSS Governed Order Rail (Right 45%) -->
+    <g transform="translate(426, 20)">
+      <!-- Deterministic CDSS Seal -->
+      <rect x="0" y="0" width="266" height="36" rx="10" fill="#D1FAE5" stroke="#6EE7B7" stroke-width="1"/>
+      <circle cx="18" cy="18" r="8" fill="#10B981"/>
+      <path d="M15 18L17 20L21 16" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="32" y="22" font-size="11" font-weight="700" fill="#065F46">CDSS VERIFIED: PASSED</text>
+      <text x="162" y="22" font-size="10" font-weight="500" fill="#047857">All Invariants Met</text>
+
+      <!-- Pre-Drafted Prescription Card -->
+      <rect x="0" y="46" width="266" height="74" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="12" y="66" font-size="12" font-weight="700" fill="#0F172A">Furosemide (LASIX) 80 mg PO</text>
+      <text x="12" y="84" font-size="11" font-weight="500" fill="#475569">Sig: 1 tab qAM x 3 days (Return 40mg D4)</text>
+      <text x="12" y="102" font-size="11" font-weight="600" fill="#2563EB">+ Day 3 Fasting BMP Lab Check</text>
+
+      <!-- 1-Click Sign & Transmit Button -->
+      <rect x="0" y="130" width="266" height="44" rx="22" fill="#10B981" filter="url(#cardShadow)"/>
+      <path d="M88 152L96 142H102L96 150H104L92 162L96 154H88V152Z" fill="#FFFFFF"/>
+      <text x="142" y="157" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">SIGN &amp; TRANSMIT</text>
+      <text x="133" y="188" font-size="10" font-weight="500" fill="#94A3B8" text-anchor="middle">SMART on FHIR R4 • Digitally Signed</text>
+    </g>
+  </g>
+
+  <!-- 6. COLLAPSIBLE SYSTEM TRACE FOOTER (For Auditors / Judges) -->
+  <rect x="72" y="860" width="1368" height="40" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+  <circle cx="96" cy="880" r="4" fill="#10B981"/>
+  <text x="108" y="884" font-size="11" font-weight="600" fill="#475569">Multi-Agent Trace:</text>
+  <text x="216" y="884" font-size="11" font-weight="500" fill="#64748B">System 1 Gate (&lt;5ms) ➔ Nova Micro SMS (334ms) ➔ CDSS Guardian (0.4ms) ➔ Sonnet 3.7 SBAR (1.2s)</text>
+  <text x="1280" y="884" font-size="11" font-weight="600" fill="#2563EB">View Latency &amp; Cost DAG ▼</text>
+</svg>

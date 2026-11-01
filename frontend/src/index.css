@@ -1,0 +1,303 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cly-canvas: #EAEFF5;
+  --color-cly-surface: #F3F6FA;
+  --color-cly-card: #FFFFFF;
+  --color-cly-border: #DFE5EE;
+  --color-cly-border-light: #EDF2F7;
+  --color-cly-slate: #64748B;
+  --color-cly-ink: #0F172A;
+  --color-cly-muted: #94A3B8;
+  --color-corin-navy: #1E2E44;
+  --color-corin-dark: #1E293B;
+  --color-corin-blue: #2563EB;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============================================================
+   BROWSER SURFACES & ACCESSIBILITY DEFAULTS
+   ============================================================ */
+
+::selection {
+  background-color: rgba(37, 99, 235, 0.22);
+  color: #0F172A;
+}
+
+:focus-visible {
+  outline: 2px solid #2563EB;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-pulse,
+  .hemodynamic-ping {
+    animation: none !important;
+  }
+}
+
+/* ============================================================
+   REFINED 3-TIER PORCELAIN & LIQUID GLASS SYSTEM
+   Level 1: Studio Canvas (#EAEFF5 -> #EDF2F7)
+   Level 2: Section Surface (#F3F6FA, border #DFE5EE)
+   Level 3: Tactile White Tile (#FFFFFF, soft elevation)
+   ============================================================ */
+
+/* Level 2: Section Container Surface (Porcelain tint from reference photo) */
+.section-surface {
+  background: #EDF1F6;
+  border: 1px solid #D8E0EC;
+  box-shadow: 
+    0 8px 24px -4px rgba(15, 23, 42, 0.03),
+    0 1px 3px rgba(15, 23, 42, 0.02);
+}
+
+/* Level 3: Tactile Inner Tile (Liquid Glass Material - NOT pure #FFFFFF, matches reference media_1793493077825_e7881f82.png) */
+.tile-surface {
+  background: #F4F6FA;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 
+    inset 0 1px 1px 0 #FFFFFF,
+    0 2px 8px -2px rgba(15, 23, 42, 0.04);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tile-surface:hover {
+  background: #F8FAFD;
+  border-color: #FFFFFF;
+  box-shadow: 
+    inset 0 1px 1.5px 0 #FFFFFF,
+    0 6px 16px -2px rgba(15, 23, 42, 0.06);
+  transform: translateY(-1px);
+}
+
+/* Light Liquid Glass Card (Missing class resolved with authentic frosted blur) */
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.76);
+  backdrop-filter: blur(20px) saturate(170%);
+  -webkit-backdrop-filter: blur(20px) saturate(170%);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.95),
+    0 8px 24px -4px rgba(15, 23, 42, 0.05);
+}
+
+/* Liquid Glass Dark Callout Pill */
+.liquid-glass-dark {
+  background: rgba(30, 41, 59, 0.88);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.3),
+    0 12px 28px -4px rgba(15, 23, 42, 0.28);
+}
+
+/* Liquid Glass Subtle Pill Control */
+.liquid-glass-pill {
+  background: rgba(234, 240, 248, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.95),
+    0 2px 6px -1px rgba(15, 23, 42, 0.04);
+}
+
+.liquid-glass-pill-active {
+  background: #1E293B;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.25),
+    0 4px 14px -2px rgba(30, 41, 59, 0.35);
+}
+
+/* Liquid Glass Deep Slate Bottom Banner */
+.liquid-glass-banner {
+  background: linear-gradient(135deg, #24364F 0%, #152336 100%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.25),
+    0 14px 32px -6px rgba(15, 23, 42, 0.25);
+}
+
+/* Frosted Glass Button inside Banner */
+.btn-glass-banner {
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #FFFFFF;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  transition: all 0.15s ease;
+}
+
+.btn-glass-banner:hover {
+  background: rgba(255, 255, 255, 0.26);
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 3D Viewport */
+.twin-viewport {
+  perspective: 1100px;
+}
+.twin-canvas {
+  transform-style: preserve-3d;
+}
+
+/* Tactile button press physics */
+.btn-tactile {
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.15s;
+}
+.btn-tactile:active {
+  transform: scale(0.97);
+}
+
+/* Citation Chip */
+.citation-chip {
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: #F8FAFC;
+  color: #1D4ED8;
+  border: 1px solid #CBD5E1;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.citation-chip:hover {
+  background-color: #1D4ED8;
+  color: #FFFFFF;
+  border-color: #1D4ED8;
+  box-shadow: 0 4px 12px rgba(29, 78, 216, 0.35);
+}
+
+/* Hemodynamic Radar Ping Keyframes */
+@keyframes radar-ping {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.9;
+  }
+  65%, 100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.hemodynamic-ping {
+  animation: radar-ping 2.6s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* ============================================================
+   LIVING BIO-RHYTHMIC CARDIAC & VASCULAR PULSATION ENGINE
+   Synced to patient resting heart rate via --heart-cycle
+   ============================================================ */
+
+@keyframes cardiac-systole-diastole {
+  0% {
+    transform: scale(1);
+    opacity: 0.88;
+    filter: drop-shadow(0 0 5px rgba(244, 63, 94, 0.45));
+  }
+  20% {
+    transform: scale(1.085);
+    opacity: 1;
+    filter: drop-shadow(0 0 18px rgba(244, 63, 94, 0.95));
+  }
+  36% {
+    transform: scale(1.02);
+    opacity: 0.92;
+  }
+  64% {
+    transform: scale(0.985);
+    opacity: 0.82;
+    filter: drop-shadow(0 0 3px rgba(244, 63, 94, 0.25));
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.88;
+    filter: drop-shadow(0 0 5px rgba(244, 63, 94, 0.45));
+  }
+}
+
+.cardiac-bio-pulse {
+  animation: cardiac-systole-diastole var(--heart-cycle, 0.732s) cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  transform-box: fill-box;
+  transform-origin: center center;
+}
+
+@keyframes vascular-flow {
+  0% {
+    stroke-dashoffset: 32;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.vascular-flow-active {
+  animation: vascular-flow var(--heart-cycle, 0.732s) linear infinite;
+}
+
+@keyframes pulmonary-transudation {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.88;
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 14px rgba(245, 158, 11, 0.7));
+  }
+}
+
+.pulmonary-transudation-active {
+  animation: pulmonary-transudation 3.2s ease-in-out infinite;
+}
+
+@keyframes renal-filtration-flux {
+  0%, 100% {
+    opacity: 0.55;
+    stroke-dashoffset: 20;
+  }
+  50% {
+    opacity: 0.95;
+    stroke-dashoffset: 0;
+    filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.8));
+  }
+}
+
+.renal-flux-active {
+  animation: renal-filtration-flux 2.2s ease-in-out infinite;
+}
+
