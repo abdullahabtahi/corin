@@ -111,6 +111,15 @@ Thumbs.db
 !.vscode/extensions.json
 !.vscode/settings.json
 
-# Claude & Antigravity
+# ==============================================================================
+# Local AI Agent, Assistant & Tooling State (Never commit to public repos)
+# ==============================================================================
+.agents/
+.codex/
+.impeccable/
+.specify/
 .claude/
+.gemini/
+.antigravity/
+skills-lock.json
 *.log

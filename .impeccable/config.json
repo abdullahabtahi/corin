@@ -1,9 +1,0 @@
-{
-  "detector": {
-    "ignoreRules": [
-      "nested-cards"
-    ],
-    "ignoreFiles": [],
-    "ignoreValues": []
-  }
-}
