@@ -1,0 +1,55 @@
+name: Corin CDS — Continuous Integration
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  frontend-verification:
+    name: Frontend Verification & CDSS Invariant Tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Bun Environment
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install Frontend Dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Static Type Check
+        run: bunx tsc -b
+
+      - name: Execute CDSS Invariant Test Suite
+        run: bun test
+
+      - name: Production Build Check
+        run: bun run build
+
+  security-and-secrets-audit:
+    name: Credential & Secret Leak Pre-Flight
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Scan for Tracked Credential or Secret Files
+        run: |
+          echo "Verifying no credential files or .env files are tracked..."
+          LEAKED_FILES=$(git ls-files | grep -iE '\.env$|\.env\.|\.pem$|\.key$|credentials\.json' || true)
+          if [ -n "$LEAKED_FILES" ]; then
+            echo "ERROR: The following sensitive files are tracked in git:"
+            echo "$LEAKED_FILES"
+            exit 1
+          fi
+          echo "Zero sensitive credential files tracked. Pass."

@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use Project Corin CDS in your clinical, biomedical, or multi-agent research, please cite it as below."
+authors:
+  - family-names: "Abtahi"
+    given-names: "Abdullah"
+    orcid: "https://orcid.org/0009-0002-3904-8742"
+title: "Corin: Autonomous Cardiorenal Decompensation Interceptor & Clinical Decision Support System"
+version: 3.0.0
+date-released: 2026-11-01
+url: "https://github.com/abdullahabtahi/corin"
+license: "Apache-2.0"
+keywords:
+  - "clinical-decision-support"
+  - "cardiorenal-syndrome"
+  - "heart-failure"
+  - "multi-agent-systems"
+  - "aws-strands"
+  - "bedrock"
+  - "onc-hti-1"
+  - "hl7-fhir"
+  - "remote-patient-monitoring"

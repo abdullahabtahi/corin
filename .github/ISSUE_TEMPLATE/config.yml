@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Report a Security or PHI Vulnerability
+    url: https://github.com/abdullahabtahi/corin/security/advisories/new
+    about: Please report potential security vulnerabilities or data leaks privately.
+  - name: 📖 Clinical Documentation & Research
+    url: https://github.com/abdullahabtahi/corin/tree/main/docs
+    about: Read the 5-pillar MECE documentation system before filing architectural inquiries.
