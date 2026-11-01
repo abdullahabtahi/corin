@@ -122,4 +122,5 @@ Thumbs.db
 .gemini/
 .antigravity/
 skills-lock.json
+run-claude.sh
 *.log
